@@ -87,7 +87,7 @@ We're trying to make this button 1/4th the width of the main view, so set the Mu
 
 - **Height**: Equal to its own width
 
-For this, we want to set the **[Aspect Ratio](https://en.wikipedia.org/wiki/Aspect_ratio_(image)** of the button to 1:1. This is done pretty simply in the Tie Fighter popup.
+For this, we want to set the **[Aspect Ratio](https://en.wikipedia.org/wiki/Aspect_ratio_(image))** of the button to 1:1. This is done pretty simply in the Tie Fighter popup.
 
 <p align="center"> <img src="screenshot10.png" height="186" align="center"> </p>
 
