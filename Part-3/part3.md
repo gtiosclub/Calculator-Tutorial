@@ -71,4 +71,32 @@ Change the button text to "9" and then change the text color and background colo
 This is what I ended up with, but beauty is in the eye of the beholder. As long as you have something that looks good to you, then we can move on.
 
 ###⌘C ⌘V
-Remember those copy/paste muscles I mentioned? Now it's time to break those out. **⌘C** the button and **⌘V** is right back onto the view.
+Remember those copy/paste muscles I mentioned? Now it's time to break those out. **⌘C** the button and **⌘V** is right back onto the view. Make sure it's snug with the other button, pixel perfect. Xcode doesn't give us any favors here, because itss auto-guides assume you want some sort of padding.
+
+<p align="center"> <img src="screenshot8.gif" height="191px" align="center"> </p>
+
+Xcode's vertical alignment does the trick, but it refuses to let you snap the button right next to its sibling. You can use the **arrow keys** to move the selected item around the screen, pixel by pixel. Pressing **←** a few times should do the trick.
+
+It's this same deal for all of the other buttons in the grid. *(Pro Tip: You can use ⌘ to select and copy multiple buttons at once.)*
+
+<p align="center"> <img src="screenshot9.gif" height="321" align="center"> </p>
+
+###The Part with the Designging
+
+Now all we have to do it actually design the button layout itself. As long as you have all of the buttons you need, anything will suffice. Per the usual, click a button and visit the Attributes inspector to adjust the label text and background color. Beauty is in the eye of the beholder, so go for whatever color or layout aesthetic you want.
+
+<p align="center"> <img src="screenshot10.png" height="350" align="center"> </p>
+
+That text label is looking a bit lonely up there, so why don't we show it some love. Change it's frame (size + position) so that it's sitting on top of the buttons. Make it align with the padding guides on the left and right of the view. Also go ahead and make it conform to whatever design style you're going for. 
+
+<p align="center"> <img src="screenshot12.png" height="400" align="center"> </p>
+
+Definitely starting to look pretty solid. Leave some space above the the label, because we'll be using that later.
+
+###Recap
+Interface Builder's tools make it simple to design layouts with many different components.
+
+###Next Time
+We will learn how to use Constraints to enable your layouts to function on any display size.
+
+####[Part 4: Setting up your Constraints](P3/part3.md)

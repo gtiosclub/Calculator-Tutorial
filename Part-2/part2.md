@@ -60,4 +60,4 @@ Interface Builder is very visual. What you see if what you get, *to an extent*. 
 ###Next Time
 We will learn how to use Interface Builder to make layouts with multiple buttons and how to customize the look of components on screen.
 
-####[Part 3: Designing your layout with Interface Builder](P2/part2.md)
+####[Part 3: Designing your layout with Interface Builder](P3/part3.md)
