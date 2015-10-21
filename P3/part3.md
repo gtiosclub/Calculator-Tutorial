@@ -75,9 +75,9 @@ Remember those copy/paste muscles I mentioned? Now it's time to break those out.
 
 <p align="center"> <img src="screenshot8.gif" height="191px" align="center"> </p>
 
-Xcode's vertical alignment does the trick, but it refuses to let you snap the button right next to its sibling. You can use the **arrow keys** to move the selected item around the screen, pixel by pixel. Pressing **←** a few times should do the trick.
+Xcode's vertical alignment does the trick, but it refuses to let you horizontally snap the button right next to its sibling. You can use the **arrow keys** to move the selected item around the screen, pixel by pixel. Pressing **←** a few times should do the trick.
 
-It's this same deal for all of the other buttons in the grid. *(Pro Tip: You can use ⌘ to select and copy multiple buttons at once.)*
+It's this same deal for all of the other buttons in the grid. *(Pro Tip: You can hold ⌘ to select and copy multiple buttons at once.)*
 
 <p align="center"> <img src="screenshot9.gif" height="321" align="center"> </p>
 
