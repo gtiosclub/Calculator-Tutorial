@@ -5,7 +5,7 @@ You understand the basics of working with Interface Builder, so you're ready to 
 1. Buttons. Lots of buttons. (Numbers and operators)
 2. One big output display.
 
-In [Part 2](/Part-2/part2.md), we finished with a UILabel in the center of the screen somewhere. That satisfies "One big output display", so now we just need some buttons. 
+In [Part 2](/P2/part2.md), we finished with a UILabel in the center of the screen somewhere. That satisfies "One big output display", so now we just need some buttons. 
 
 ###Buttons. Lots of buttons.
 
@@ -99,4 +99,4 @@ Interface Builder's tools make it simple to design layouts with many different c
 ###Next Time
 We will learn how to use Constraints to enable your layouts to function on any display size.
 
-####[Part 4: Setting up your Constraints](P3/part3.md)
+####[Part 4: Setting up your Constraints](P4/part4.md)
