@@ -62,3 +62,38 @@ Funny enough, this `resultLabel` is the only IBOutlet we need to make for now.
 
 ##Connecting UI actions to functions
 
+We can connect functions just like we control-drag to connect variables. This time, though, we have to change the connection from an Outlet to an **Action**.
+
+<p align="center"> <img src="screenshot11.png" align="center"> </p>
+
+You'll also want to change the type from `AnyObject` to `UIButton` using the dropdown.
+
+<p align="center"> <img src="screenshot12.png" align="center"> </p>
+
+Name the function `addButtonPressed` and then press *Connect*.
+
+Do the same for `subtractButtonPressed`, `multiplyButtonPressed`, `divideButtonPressed`, `equalsButtonPressed`, and `clearButtonPressed`. Now your View Controller should look like this:
+
+<p align="center"> <img src="screenshot13.png" align="center"> </p>
+
+###Adding connections to the number buttons
+It would be pretty tragic if we had to make a unique function for all of these number buttons. `zeroButtonPressed`, `oneButtonPressed`, `twoButtonPressed`.... yikes.
+
+We can actually connect **multiple** IBActions to the **same function**.
+
+From any of the number buttons, control-drag and create the function `numberButtonPressed`. It's really important that you set the type to `UIButton` instead of `AnyObject` for this one. Then, you can control-drag and link all of the other nine buttons to that *one* function. That should look like this:
+
+<p align="center"> <img src="screenshot14.png" height: "100px" align="center"> </p>
+
+Do that for all of the number buttons and you should be good to go!
+
+Now we have all of our code connections established, and we're ready to make this calculator actually calculate something.
+
+###Recap
+You can connect Storyboard objects to code (both variables and functions) by using a control-drag across split-screened windows.
+
+###Next Time
+We set up the protocol that will be handling the calculator's calculations.
+
+####[Part 6: Preparing your Calculator Delegate](P6/part6.md)
+
