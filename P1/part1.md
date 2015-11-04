@@ -10,9 +10,9 @@ Github is a platform to easily save your code onto a cloud where you can track t
 Then, you need to fork our Calculator-Template repository. Go to https://github.com/iosgatech/Calculator-Template, press the fork button on the top right, and select your own account to fork to.
 
 </br>
-<img src="screenshot1.png" style="width: 50%;  max-width: 320px">
+<img src="screenshot1.png" style="height: 170px">
 </br>
-<img src="screenshot2.png" style="width: 50%; max-width: 320px">
+<img src="screenshot2.png" style="height: 250px">
 </br>
 
 Congratz! You now have forked a repository! You now have copied over the repository over to your account, which now you can freely manipulate without modifying the original repository!
