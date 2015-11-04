@@ -1,4 +1,4 @@
-##Part 4: Setting up your Constraints
+## Part 4: Setting up your Constraints
 
 In Part 3, we designed the layout for our calculator. All of the buttons and labels exist on the canvas, but in absolute positions. This works fine and well if we use the app on the iPhone 5 simulator, because that device had the same screen size (4 inches) as the canvas that we're designing on. **What happens if we run the app on an iPhone 6 or 6 Plus?**
 
@@ -6,9 +6,9 @@ In Part 3, we designed the layout for our calculator. All of the buttons and lab
 
 The interface doesn't grow to fill the screen. It actually stays the exact same pixel size on the screen, adding empty space to make up the difference. This is where Layout Constraints come in handy. **Constraints allow layouts to be represented as a set of relationships instead of pixel values**.
 
-###Constraints must to be Unambiguous
+### Constraints must to be Unambiguous
 
-The goal is constraits is to Unambiguously represent the four following parts of an object's frame:
+The goal is constraints is to Unambiguously represent the four following parts of an object's frame:
 
 1. **X position**
 2. **Y position** (X and Y positions are called the *Origin*)
@@ -28,7 +28,7 @@ The frame of the **clr** button can be expressed as the following:
 
 These four relationships **unambiguously** tell us the origin and size of the button. Each of them can be quantified as a Layout Constrains on the button itself.
 
-###Adding Position Constraints
+### Adding Position Constraints
 
 <p align="center"> <img src="screenshot3.png" height="50px" align="center"> </p>
 
@@ -40,11 +40,11 @@ Select the **clr** button and then click the tie fighter. It should pop open and
 
 The top half of that popup is for setting Position constraints. The text boxes control the Top, Bottom, Leading, and Trailing constraints. You confirm the new constraint by clicking the red line.
 
-####"Constrain to margins"
+#### "Constrain to margins"
 
-The one catch to position constraints is that they either constrain to the **margins** of the screen (the padding around the edge that Xcode's auto-guides are so insistent on), or the **edge** of the screen itself. By default, this is set to *Constrain to margins* (the blue checkbox below the position constraints). 
+The one catch to position constraints is that they either constrain to the **margins** of the screen (the padding around the edge that Xcode's auto-guides are so insistent on), or the **edge** of the screen itself. By default, this is set to *Constrain to margins* (the blue checkbox below the position constraints).
 
-###Setting your Position Constraints
+### Setting your Position Constraints
 
 Step one to setting any constraints is to select the object in question (we're starting with the **clr** button). Then, click the Tie Fighter to bring up your constraint options. Uncheck *Constrain to margins*, and then set all of the position constraints to 0. It should look like this:
 
@@ -56,7 +56,7 @@ If you did it right and are attentive, you should notice a dotted orange box ins
 
 This is the frame (size + origin) of the button once the constraints are applied. Notice how the origin is in the right place, but the size is stil all wrong. That brings us to...
 
-###Setting your Size Constraints
+### Setting your Size Constraints
 
 Our size relationships are a bit more complex, because they're relative and proportional.
 
@@ -93,7 +93,7 @@ For this, we want to set the **[Aspect Ratio](https://en.wikipedia.org/wiki/Aspe
 
 Now, for the very first time, the **clr** button has complete constraints. The layout engine knows **unambiguously** the desired origin and frame, all completely relative to other objects on screen.
 
-###...but we have 15 other buttons to deal with
+### ...but we have 15 other buttons to deal with
 
 Lucky for all of us, the other buttons use the same constraint pattern. We just have to set the same constraints for all of the other buttons. You have two options:
 
@@ -104,7 +104,7 @@ Lucky for all of us, the other buttons use the same constraint pattern. We just 
 
 Both should work just as well, assuming you were *pixel perfect* when setting up your layout in Part 3. If you have problems, double check that everything is exactly where it should be.
 
-###Don't forget about the label
+### Don't forget about the label
 
 That label at the top may be all alone, but it needs constrains too. Using the Tie Fighter, add constraints to the left, right (It already has bottom constraints, because the 7, 8, 9, and + buttons have *top* constraints that reference it). Leave *Constrain to margins* checked so there's some padding between the text and the edge of the screen. It should look like this:
 
@@ -118,9 +118,9 @@ We need to update the frame of the view to match what the layout engine expects 
 
 <p align="center"> <img src="screenshot14.png" height="94" align="center"> </p>
 
-###Reaping the fruits of your labor
+### Reaping the fruits of your labor
 
-Now you have an interface that is fully layed out, designed, **and** constrained into place. Congratulations, this is a big deal! It's only easier from here.
+Now you have an interface that is fully laid out, designed, **and** constrained into place. Congratulations, this is a big deal! It's only easier from here.
 
 Now, take a look at your app in different Simulators. It should *just work*.
 
@@ -130,10 +130,10 @@ If it all works, good job!!!
 
 If it didn't -- welcome to the life of a Software Engineer. Sometimes stuff just doesn't work the way you expect. Take a look at your constraints again (in the Ruler tab) and make sure they're all correct. You can delete a constraint by clicking on it and then pressing backspace.
 
-###Recap
-Constraints are about unambiuously defining relationships between objects on screen. You can set positional constraints relative to objects nearby with the Tie Fighter and set up other dynamic relationships using control-drag.
+### Recap
+Constraints are about unambiguously defining relationships between objects on screen. You can set positional constraints relative to objects nearby with the Tie Fighter and set up other dynamic relationships using control-drag.
 
-###Next Time
+### Next Time
 We will learn how to connect objects in the Storyboard to variable and functions in the code.
 
-####[Part 5: Connecting Storyboard to Code](P5/part5.md)
+#### [Part 5: Connecting Storyboard to Code](P5/part5.md)

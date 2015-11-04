@@ -1,11 +1,11 @@
-##Part 5: Connecting Storyboard to Code
+## Part 5: Connecting Storyboard to Code
 
 In the past three parts, we laboriously created the interface for our calculator. It's been layed out, designed, *and* constrained to work on all screen sizes.
 But for all this work, it doesn't actually do anything yet.
 
 The rest of this tutorial assumes you know how to program but doesn't actually require any experience. I just won't be explaining the nitty gritty details. There are great resources out there for learning Swift if you need a crash course or a refresher.
 
-###ViewController.swift
+### ViewController.swift
 
 In our storyboard, we have a View Controller. Every View Controller should also have a corresponding *.swift* file. In this case, we have the default **ViewController.swift**. Open that file in the file viewer in the left-most pane of the window.
 
@@ -13,7 +13,7 @@ In our storyboard, we have a View Controller. Every View Controller should also 
 
 **To actually write code that interacts with out interface**, we have to connect items on screen to counterparts in code. Even before that, we have to make it so we can see both the storyboard and the code at the same time.
 
-###Viewing Storyboard and Code at once
+### Viewing Storyboard and Code at once
 
 Xcode has our back yet again. It makes it really simple to split-screen two files at once.
 
@@ -44,7 +44,7 @@ Right next to the Counterparts button, there's another set of buttons that contr
 
 This is the setup I tend to prefer, with the File Browser (left sidebar) and the Storyboard's View Hierarchy closed. The Inspector is something that gets used fairly often so it's a good idea to have it open.
 
-###Connecting Storyboard objects as varaibles
+### Connecting Storyboard objects as varaibles
 
 To access an object on the storyboard as a variable in the ViewController class, we need to connect it as an IBOutlet. Just like we set up those relative constraints, we can do a control-drag to forge a relationship. Except this time, we're establishing a connection between Storyboard and Code.
 
@@ -56,11 +56,11 @@ In the popup, name the variable `resultLabel` and then press **Connect**. Now yo
 
 <p align="center"> <img src="screenshot10.png" height="72px" align="center"> </p>
 
-Don't worry about what everything on that line means. The only parts that really matter for us is the name (`resultLabel`) and the type (`UILabel`). For a detailed explination of the key words and what that exclamation mark is doing, read [Part 5 Bonus: Explaining @IBOutlet "junk"](bonus.md).
+Don't worry about what everything on that line means. The only parts that really matter for us is the name (`resultLabel`) and the type (`UILabel`). For a detailed explanation of the key words and what that exclamation mark is doing, read [Part 5 Bonus: Explaining @IBOutlet "junk"](bonus.md).
 
 Funny enough, this `resultLabel` is the only IBOutlet we need to make for now.
 
-##Connecting UI actions to functions
+## Connecting UI actions to functions
 
 We can connect functions just like we control-drag to connect variables. This time, though, we have to change the connection from an Outlet to an **Action**.
 
@@ -76,7 +76,7 @@ Do the same for `subtractButtonPressed`, `multiplyButtonPressed`, `divideButtonP
 
 <p align="center"> <img src="screenshot13.png" align="center"> </p>
 
-###Adding connections to the number buttons
+### Adding connections to the number buttons
 It would be pretty tragic if we had to make a unique function for all of these number buttons. `zeroButtonPressed`, `oneButtonPressed`, `twoButtonPressed`.... yikes.
 
 We can actually connect **multiple** IBActions to the **same function**.
@@ -89,11 +89,10 @@ Do that for all of the number buttons and you should be good to go!
 
 Now we have all of our code connections established, and we're ready to make this calculator actually calculate something.
 
-###Recap
+### Recap
 You can connect Storyboard objects to code (both variables and functions) by using a control-drag across split-screened windows.
 
-###Next Time
+### Next Time
 We set up the protocol that will be handling the calculator's calculations.
 
-####[Part 6: Preparing your Calculator Delegate](P6/part6.md)
-
+#### [Part 6: Preparing your Calculator Delegate](P6/part6.md)
