@@ -33,4 +33,4 @@ git clone git@github.com:**your-username**/Calculator-Template.git
 
 A folder called `Calculator-Template` should show up
 
-#### [Part 2: Getting the hang of Interface Builder](P2/part2.md)
+#### [Part 2: Getting the hang of Interface Builder](../P2/part2.md)
