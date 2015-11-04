@@ -30,10 +30,10 @@ let calculations: CalculationDelegate = DefaultCalculations()
 
 Now you're ready to harness the power of the CalculationDelegate throughout the ViewController.
 
-### ecap
+### Recap
 Delegates allow classes to pass on information, allowing the delegate to perform some behavior.
 
 ### Next Time
 We will use the CalculationProtocol to add actual behavior to our 16 buttons (the fun part).
 
-#### [Part 7: Implementing your Buttons](P7/part7.md)
+#### [Part 7: Implementing your Buttons](../P7/part7.md)

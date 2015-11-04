@@ -95,4 +95,4 @@ You can connect Storyboard objects to code (both variables and functions) by usi
 ### Next Time
 We set up the protocol that will be handling the calculator's calculations.
 
-#### [Part 6: Preparing your Calculator Delegate](P6/part6.md)
+#### [Part 6: Preparing your Calculator Delegate](../P6/part6.md)

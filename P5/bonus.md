@@ -25,17 +25,19 @@ To properly allocate and deallocate memory, references must be counted. When the
 
 A **weak** reference tells the ARC system to *not* assume ownership of the object. This means that the ViewController isn't the object retaining the variable. That's handled somewhere in the mysterious inner workings of UIKit.
 
-This prevents issues like retain cycles. I'm not 100% sure what a retain cycle is (I've never experience one first hand), but I get the impression that it's when two objects `retain` eachother, creating a situation where neither will ever be deallocated.
+This prevents issues like retain cycles. I'm not 100% sure what a retain cycle is (I've never experienced one first hand), but I get the impression that it's when two objects `retain` each other, creating a situation where neither will ever be deallocated.
 
 **tl;dr** `weak` prevents weird stuff from happening because of the way Objective-C works.
 
 ### var and !
-`var` and  `!` exist for the same reason, because of the lifecyle of a UIView:
+`var` and  `!` exist for the same reason, because of the lifecycle of a UIView:
 
 1. Allocate memory for the object.
 2. Instantiate the object. At this point, all IBOutlets are **nil**.
 3. Instantiate the subviews based on the Storyboard file and connect the references.
 
-`!` is necessary because the variable starts as nil. It *could* be an `?` instead, but that adds all of the boilerplate of dealing with Optionals. `!` denotes an implicitly unwrapped optional. This means that, yes, it is possible for the object to be nil, but we are *assuming* that it is not nil, so we can treat it like a regular non-optional type. This works well because the reference is immediately set to an actual value. This just happens too late in the lifecyle for a standard non-optional type to work 100% of the time.
+`!` is necessary because the variable starts as nil. It *could* be an `?` instead, but that adds all of the boilerplate of dealing with Optionals. `!` denotes an implicitly unwrapped optional. This means that, yes, it is possible for the object to be nil, but we are *assuming* that it is not nil, so we can treat it like a regular non-optional type. This works well because the reference is immediately set to an actual value. This just happens too late in the lifecycle for a standard non-optional type to work 100% of the time.
 
-`var` is necessary because we change the varaible from nil to whatever it's supposed to be. If we used a `let`, then the variable would be immutable and could not change from nil, which is definitely not what we want.
+`var` is necessary because we change the variable from nil to whatever it's supposed to be. If we used a `let`, then the variable would be immutable and could not change from nil, which is definitely not what we want.
+
+#### [Part 5: Connecting Storyboard to Code](../P5/part5.md)

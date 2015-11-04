@@ -29,4 +29,4 @@ You tested your calculator, and fixed any problems that popped up. Now you have 
 ### Next Time
 You aren't done yet though! We'll shake up your world and fill in that mysterious empty space at the top of the screen with a UITableView.
 
-#### [Part 9: Preparing your UITableView](P9/part9.md)
+#### [Part 9: Preparing your UITableView](../P9/part9.md)

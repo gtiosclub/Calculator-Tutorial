@@ -99,4 +99,4 @@ Interface Builder's tools make it simple to design layouts with many different c
 ### Next Time
 We will learn how to use Constraints to enable your layouts to function on any display size.
 
-#### [Part 4: Setting up your Constraints](P4/part4.md)
+#### [Part 4: Setting up your Constraints](../P4/part4.md)

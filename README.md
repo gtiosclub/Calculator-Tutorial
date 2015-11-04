@@ -3,6 +3,7 @@
 ##### [Part 3: Designing your layout with Interface Builder](P3/part3.md)
 ##### [Part 4: Setting up your Constraints](P4/part4.md)
 ##### [Part 5: Connecting Storyboard to Code](P5/part5.md)
+##### [Part 5 Bonus: Explaining @IBOutlet "junk"](P5/bonus.md)
 ##### [Part 6: Preparing your Calculation Delegate](P6/part6.md)
 ##### [Part 7: Implementing your Buttons](P7/part7.md)
 ##### [Part 8: Testing and Debugging your Calculator](P8/part8.md)

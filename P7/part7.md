@@ -117,4 +117,4 @@ We connected the logic contained in the CalculationDelegate to the interface by 
 ### Next Time
 We will test the calculator and make sure everything is in working order.
 
-#### [Part 8: Testing and Debugging your Calculator](P8/part8.md)
+#### [Part 8: Testing and Debugging your Calculator](../P8/part8.md)
