@@ -1,4 +1,4 @@
-## Part 5 Bonus: Explaining @IBOutlet "junk"
+## Bonus: Explaining @IBOutlet "junk"
 
 <p align="center"> <img src="screenshot10.png" height="72px" align="center"> </p>
 
