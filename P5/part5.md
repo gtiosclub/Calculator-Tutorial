@@ -1,6 +1,6 @@
 ## Part 5: Connecting Storyboard to Code
 
-In the past three parts, we laboriously created the interface for our calculator. It's been layed out, designed, *and* constrained to work on all screen sizes.
+In the past three parts, we laboriously created the interface for our calculator. It's been laid out, designed, *and* constrained to work on all screen sizes.
 But for all this work, it doesn't actually do anything yet.
 
 The rest of this tutorial assumes you know how to program but doesn't actually require any experience. I just won't be explaining the nitty gritty details. There are great resources out there for learning Swift if you need a crash course or a refresher.
@@ -44,7 +44,7 @@ Right next to the Counterparts button, there's another set of buttons that contr
 
 This is the setup I tend to prefer, with the File Browser (left sidebar) and the Storyboard's View Hierarchy closed. The Inspector is something that gets used fairly often so it's a good idea to have it open.
 
-### Connecting Storyboard objects as varaibles
+### Connecting Storyboard objects as variables
 
 To access an object on the storyboard as a variable in the ViewController class, we need to connect it as an IBOutlet. Just like we set up those relative constraints, we can do a control-drag to forge a relationship. Except this time, we're establishing a connection between Storyboard and Code.
 
@@ -91,6 +91,8 @@ Now we have all of our code connections established, and we're ready to make thi
 
 ### Recap
 You can connect Storyboard objects to code (both variables and functions) by using a control-drag across split-screened windows.
+
+If you missed it, I talked about more technical stuff in the [Part 5 Bonus: Explaining @IBOutlet "junk"](../P5/bonus.md). Take a look at it if that sort of stuff interests you.
 
 ### Next Time
 We set up the protocol that will be handling the calculator's calculations.

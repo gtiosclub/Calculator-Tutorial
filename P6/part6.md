@@ -18,7 +18,7 @@ Another delegate we already have is the `AppDelegate.swift`, which is a `UIAppli
 
 `CalculationDelegate` is only a protocol, so it needs to be implemented with actual logic. This tutorial doesn't assume any experience with programming in Swift, or programming in general, so that implementation is taken care of in `DefaultCalculations`. It contains the ~100 lines of source code necessary to get functional calculator logic.
 
-**If you're up to the challenege**, you can implement `CalculationDelegate` in your own class and program that logic on your own. It might be a good idea to finish the next few sections of the tutorial first, just so you can get a good picture of how the delegate is being called. Then you can go crazy and have a good time.
+**If you're up to the challenge*, you can implement `CalculationDelegate` in your own class and program that logic on your own. It might be a good idea to finish the next few sections of the tutorial first, just so you can get a good picture of how the delegate is being called. Then you can go crazy and have a good time.
 
 ### Adding a CalculationDelegate to our ViewController
 

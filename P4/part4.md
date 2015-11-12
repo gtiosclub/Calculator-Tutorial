@@ -54,7 +54,7 @@ If you did it right and are attentive, you should notice a dotted orange box ins
 
 <p align="center"> <img src="screenshot6.png" height="120px" align="center"> </p>
 
-This is the frame (size + origin) of the button once the constraints are applied. Notice how the origin is in the right place, but the size is stil all wrong. That brings us to...
+This is the frame (size + origin) of the button once the constraints are applied. Notice how the origin is in the right place, but the size is still all wrong. That brings us to...
 
 ### Setting your Size Constraints
 
@@ -97,8 +97,8 @@ Now, for the very first time, the **clr** button has complete constraints. The l
 
 Lucky for all of us, the other buttons use the same constraint pattern. We just have to set the same constraints for all of the other buttons. You have two options:
 
-1. **Do all of those steps for all of the buttons.** It's a bit tedious, but it would work faily well.
-2. If you select multiple buttons at once using the ⌘ button, then you can **simultanously apply constraints to all of them at once**. This is more complicated to pull off, but I demonstrate it in this video. (It's very important that you select the buttons starting with the **clr** button).
+1. **Do all of those steps for all of the buttons.** It's a bit tedious, but it would work fairly well.
+2. If you select multiple buttons at once using the ⌘ button, then you can **simultaneously apply constraints to all of them at once**. This is more complicated to pull off, but I demonstrate it in this video. (It's very important that you select the buttons starting with the **clr** button).
 
 [<p align="center"> <img src="screenshot11.png" height="300" align="center"> </p>](http://www.youtube.com/watch?v=KHyFUpohY90)
 

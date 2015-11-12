@@ -2,10 +2,10 @@
 
 This tutorial will teach you how to build a Calculator app using Interface Builder and Storyboards.
 
-Github is a platform to easily save your code onto a cloud where you can track the changes you've made over time. It also allows others to see and contribute to your open source code. If you haven't done so yet:
+Github is a platform to easily save your code onto the cloud so you can track the changes you've made over time. It also allows other users to see and contribute to your open source code. If you haven't done so yet:
 
 1. Sign up for an account at [Github](https://www.github.com)
-2. Set up your github [SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
+2. Set up your Github [SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
 
 Then, you need to fork our Calculator-Template repository. Go to https://github.com/iosgatech/Calculator-Template, press the fork button on the top right, and select your own account to fork to.
 
@@ -25,7 +25,7 @@ Navigate to the folder where you want to save your Xcode projects. For example, 
 cd ~/Desktop
 ```
 
-Proceed to clone the repository in that directory by typing in this line and replacing `**your-username**` with your github username:
+Proceed to clone the repository in that directory by typing in this line and replacing `**your-username**` with your Github username:
 
 ```
 git clone git@github.com:**your-username**/Calculator-Template.git

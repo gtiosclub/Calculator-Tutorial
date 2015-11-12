@@ -34,7 +34,7 @@ You can drag components from the UI Palette into your View Controller. Go ahead 
 <p align="center"> <img src="screenshot4.png" height="350px" align="center"> </p>
 
 ### And he said, "Let there be Label"
-You can customize the label to your heart's content, too. Remember the Attribute Inspector from earleir? Open that up and you should see a treasure-trove of customization options. Some are very clear (Text, Color, Font) and others are a bit more... esoteric (What the hell is a View Semantic?).
+You can customize the label to your heart's content, too. Remember the Attribute Inspector from earlier? Open that up and you should see a treasure-trove of customization options. Some are very clear (Text, Color, Font) and others are a bit more... esoteric (What the hell is a View Semantic?).
 
 Play around some. Try to customize the text and make the font size larger. Both of these options are in the first five rows, so they should be pretty easy to manage. You might have to make the label larger, but you can do that just as easily by dragging the bottom-right corner of the label in the canvas.
 
@@ -42,7 +42,7 @@ Play around some. Try to customize the text and make the font size larger. Both 
 
 Now's a good time to make sure we're on the right track. Lets run our app in the simulator and see what happens. We *should* see **exactly** what we see on the canvas (some sort of customized UILabel floating inside our View Controller).
 
-At the top of the Xcode window, your have your `Project Targets`. This is where you run your app, either on a physical device or the iOS Simulator.
+At the top of the Xcode window, you have your `Project Targets`. This is where you run your app, either on a physical device or the iOS Simulator.
 
 <p align="center"> <img src="screenshot5.png" height="37px" align="center"> </p>
 
