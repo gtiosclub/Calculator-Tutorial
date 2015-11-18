@@ -10,5 +10,5 @@
 ##### [Part 9: Preparing your TableViewController](P9/part9.md)
 ##### [Part 10: Implementing your custom TableViewCell](P10/part10.md)
 ##### [Part 11: Implementing your TableViewDataSource](P11/part11.md)
-##### [Part 12: Basking in glory](P12/part12.md)
+##### [Part 12: Reloading and Animating your Table View](P12/part12.md)
 ##### [Part 13: Pushing your changes to Github](P13/part13.md)
