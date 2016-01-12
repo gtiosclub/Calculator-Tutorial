@@ -102,7 +102,9 @@ Lucky for all of us, the other buttons use the same constraint pattern. We just 
 
 [<p align="center"> <img src="screenshot11.png" height="300" align="center"> </p>](http://www.youtube.com/watch?v=KHyFUpohY90)
 
-Both should work just as well, assuming you were *pixel perfect* when setting up your layout in Part 3. If you have problems, double check that everything is exactly where it should be.
+**([Video](http://www.youtube.com/watch?v=KHyFUpohY90)^)**
+
+Both should work just as well, assuming you were ***pixel perfect*** when setting up your layout in Part 3. *If you have problems, double check that everything is exactly where it should be.*
 
 ### Don't forget about the label
 
@@ -136,5 +138,4 @@ Constraints are about unambiguously defining relationships between objects on sc
 ### Next Time
 We will learn how to connect objects in the Storyboard to variable and functions in the code. I highly recommend looking into the bonus section as that explains some really important notes about IBOutlets.
 
-#### [Part 5 Bonus: Explaining @IBOutlet "junk"](../P5/bonus.md)
 #### [Part 5: Connecting Storyboard to Code](../P5/part5.md)

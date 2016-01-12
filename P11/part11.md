@@ -14,7 +14,9 @@ We need to add the code that controls the Table View itself. `UITableView` has t
 class ViewController: UIViewController, UITableViewDataSource {
 ```
 
-Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAtIndexPath:)`. `numberOfRowsInSection` tells the data source how many rows the table should have, and `cellForRowAtIndexPath` creates a copy of the prototype cell that we made in Part 10.
+Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAtIndexPath:)`. 
+
+`numberOfRowsInSection` tells the data source how many rows the table should have, and `cellForRowAtIndexPath` creates a copy of the prototype cell that we made in Part 10.
 
 #### numberOfRowsInSection:
 
