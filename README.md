@@ -12,3 +12,8 @@
 ##### [Part 11: Implementing your TableViewDataSource](P11/part11.md)
 ##### [Part 12: Reloading and Animating your Table View](P12/part12.md)
 ##### [Part 13: Pushing your changes to Github](P13/part13.md)
+
+</br>
+
+#### Calculator-Complete
+If you have any major issues following the tutorial, a completed version of this tutorial is available on our GitHub at https://github.com/iosgatech/Calculator-Complete
