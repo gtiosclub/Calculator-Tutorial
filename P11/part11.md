@@ -25,7 +25,7 @@ We need to figure out how many rows are in our table. Speaking of, how are we ac
 This is taken care of by the default CalculationDelegate that you've been using the whole time. The class has a `previousExpressions` array that holds the previous expressions entered by the user (as the name sorta implies). All we need to do is return the number of items in that array.
 
 ```swift
-func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return calculations.previousExpressions.count
 }
 ```
@@ -35,7 +35,7 @@ func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> In
 This one is a bit more complicated. First I'll show you the implementation so you can suck it all in, and then I'll explain.
 
 ```swift
-func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let index = indexPath.item
     let (expression, result) = calculations.previousExpressions[index]
 

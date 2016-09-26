@@ -1,41 +1,32 @@
-## Part 1: Setting up your Github
+## Part 1: Creating your Xcode Project
 
-This tutorial will teach you how to build a Calculator app using Interface Builder and Storyboards.
+This tutorial will teach you how to build a Calculator app using Interface Builder and Storyboards. To get started, open up Xcode. You should see a screen that looks like this: 
 
-Github is a platform to easily save your code onto the cloud so you can track the changes you've made over time. It also allows other users to see and contribute to your open source code. If you haven't done so yet:
+<p align="center"> <img src="screenshot1.png" height="300px" align="center"> </p>
 
-1. Sign up for an account at [Github](https://www.github.com)
-2. Set up your Github [SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
+Click **Create a new Xcode Project** and select the iOS Single View Application template. 
+(If you don't see the welcome screen, `Command-Shift-N` will get the job done.)
 
-Then, you need to fork our Calculator-Template repository. Go to https://github.com/iosgatech/Calculator-Template, press the fork button on the top right, and select your own account to fork to.
+<p align="center"> <img src="screenshot2.png" height="300px" align="center"> </p>
 
-</br>
-<img src="screenshot1.png" style="height: 110px">
-</br></br></br>
-<img src="screenshot2.png" style="height: 250px">
-</br>
+Fill out information about your project. You don't need a Team, but can select one if you it. Your organization name and identifier can be anything you want.
 
-You now have forked a repository! You now have copied over the repository over to your account, which now you can freely manipulate without modifying the original code.
+<p align="center"> <img src="screenshot3.png" height="300px" align="center"> </p>
 
-But now you need to clone the repository that you just forked to your computer in order to edit it. Open up your terminal using <kbd>command</kbd> + <kbd>space</kbd> and then  typing in "terminal". Press enter and a terminal window should show up.
+Xcode will create your new project and pop it open. You should have these files:
 
-Navigate to the folder where you want to save your Xcode projects. For example, if you would like to save your Calculator directly to the desktop, first `cd` to `~/Desktop` by typing this into the terminal and pressing enter
+<p align="center"> <img src="screenshot4.png" height="187px" align="center"> </p>
 
-```
-cd ~/Desktop
-```
-
-Proceed to clone the repository in that directory by typing in this line and replacing `**your-username**` with your Github username:
-
-```
-git clone git@github.com:**your-username**/Calculator-Template.git
-```
-
-A folder called `Calculator-Template` should show up.
+- **AppDelegate.swift**: Communication point between iOS and your app.
+- **ViewController.swift**: A View Controller is a single screen on an iPhone app. It controls the content on-screen and handles user interaction.
+- **Main.storyboard**: Contains the layout of your app. We'll open this in a sec.
+- **Assets.xcassets**: Contains images that yor app uses, including the icon.
+- **LaunchScreen.storyboard**: A static storyboard that opens while your app is launching.
+- **Info.plist**: Configures some properties of your app.
 
 ### Recap
 
-You forked and cloned the Calculator Template and you're ready to get started with the real meat of the tutorial.
+You set up your Xcode project and you're ready to get started with the real meat of the tutorial.
 
 ### Next Time
 

@@ -40,13 +40,15 @@ There's a View Controller, then a *View*, and then the components we dragged in 
 
 In the Size Inspector, we can see important specs about a view's coordinate position and its width and height. For the main view, these values can't be changed, but we can see them. **The view is 320 points wide**.
 
+(If your view isn't 320 points wide, switch to the **iPhone SE** on the bottom bar. This is important because the SE is the only device with a width divisible by 4.)
+
 #### Important Side note about Points vs Pixels
 
 In iOS development everything is expressed in Point values instead of Pixel values. iOS devices have scale values of either @1x, @2x, or @3x:
 
 - **@1x**: A device without Retina Display. Every interface "point" is one on-screen pixel.
 - **@2x**: A device with standard Retina Display. Every interface "point" is four on-screen pixels (a 2x2 area).
-- **@3x**: A device with an even higher resolution Retina Display (The iPhone 6/6S Plus). Every interface "point" is nine on-screen pixels (a 3x3 area).
+- **@3x**: A device with an even higher resolution Retina Display (iPhone 6/7 Plus). Every interface "point" is nine on-screen pixels (a 3x3 area).
 
 Points allow code to make sense and work the same regardless of the pixel-density of a device. Otherwise everything would be a huge headache.
 

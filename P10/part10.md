@@ -94,7 +94,7 @@ class PaperTapeCell : UITableViewCell {
  
     @IBOutlet weak var label: UILabel!
     
-    func customize(customString: String) {
+    func customize(_ customString: String) {
         label.text = customString
     }
     

@@ -25,7 +25,7 @@ To properly allocate and deallocate memory, references must be counted. When the
 
 A **weak** reference tells the ARC system to *not* assume ownership of the object. This means that the ViewController isn't the object retaining the variable. That's handled somewhere in the mysterious inner workings of UIKit.
 
-This prevents issues like retain cycles. I'm not 100% sure what a retain cycle is (I've never experienced one first hand), but I get the impression that it's when two objects `retain` each other, creating a situation where neither will ever be deallocated.
+This prevents issues like retain cycles, which is when two objects `retain` each other. This creates a situation where neither will ever be deallocated.
 
 **tl;dr** `weak` prevents weird stuff from happening because of the way Objective-C works.
 

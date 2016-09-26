@@ -74,7 +74,7 @@ Name the function `addButtonPressed` and then press *Connect*.
 
 Do the same for `subtractButtonPressed`, `multiplyButtonPressed`, `divideButtonPressed`, `equalsButtonPressed`, and `clearButtonPressed`. Now your View Controller should look like this:
 
-<p align="center"> <img src="screenshot13.png" align="center"> </p>
+<p align="center"> <img src="screenshot13.png" height: "224px" align="center"> </p>
 
 ### Adding connections to the number buttons
 It would be pretty tragic if we had to make a unique function for all of these number buttons. `zeroButtonPressed`, `oneButtonPressed`, `twoButtonPressed`.... yikes.
