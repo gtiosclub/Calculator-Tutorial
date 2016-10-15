@@ -58,9 +58,9 @@ func setOperator(_ character: String, withFunction function: @escaping (Double, 
 
 #### @escaping
 
-The one weird bit here is the `@escaping` annotation. This boils down to an esoteric distinction between *espacing* and *nonescaping* closures (a function can be called a closure when it's used as a method parameter). 
+The one weird bit here is the `@escaping` annotation. This boils down to an esoteric distinction between *espacing* and *nonescaping* closures (a function can be called a closure when it's used as a method parameter). Closures are nonescaping by default. This means they can't *escape* the function they exist in, either by passing them to a different function or by assigning them to a variable. Nonescaping functions have some benefits and can be compiler-optimized, but they won't work for us in this situation.
 
-Marking the closure `@escaping` allows it to *escape* the context of the function. We do this when we call `DefaultOperator(forCharacter: character, withFunction: function)`, because we're allowing the `function` to exist in a different context (the `DefaultOperator`). This requires the compiler to treat the closure differently, so we have to annotate that with `@escaping`.
+Marking the closure `@escaping` allows it to *escape* the context of the function. We escape the closure when we call `DefaultOperator(forCharacter: character, withFunction: function)`, because we're passing the `function` to the `DefaultOperator`. Since we're violating the default nonescaping behavior, the code wouldn't compile without the `@escaping` annotation.
 
 #### Calling the function 
 
