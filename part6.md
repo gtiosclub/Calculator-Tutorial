@@ -2,15 +2,15 @@
 
 Programming the logic for a calculator is time consuming and not really the focus of this tutorial. *We have that covered for you.*
 
-Download this file and drop it in to your Xcode project: **[CalculationDelegate.swift](CalculationDelegate.swift)**.
+Download this file and drop it in to your Xcode project: **<a href="/assets/calculator/P6/CalculationDelegate.swift" download>CalculationDelegate.swift</a>**.
 
 Your project should look like this now:
 
-<p align="center"> <img src="screenshot0.png" style="height: 200px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P6/screenshot0.png" height=200px align="center"> </p>
 
 ### CalculationDelegate.swift
 
-<p align="center"> <img src="screenshot1.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P6/screenshot1.png" height="400px" align="center"> </p>
 
 CalculationDelegate is a protocol that contains all of the necessary *function headers* for the logic to our calculator. Functions like `handleInput` and `setOperator` don't actually do anything yet, but it's a blueprint of how a Calculation Delegate should behave.
 
@@ -42,4 +42,4 @@ Delegates allow classes to pass on information, allowing the delegate to perform
 ### Next Time
 We will use the CalculationProtocol to add actual behavior to our 16 buttons (the fun part).
 
-#### [Part 7: Implementing your Buttons](../P7/part7.md)
+#### <a href="#top" onclick="setCalculatorTutorial(7)">Part 7: Implementing your Buttons</a>

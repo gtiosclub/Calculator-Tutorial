@@ -2,7 +2,7 @@
 
 **Interface Builder** is Xcode's GUI editor. For most projects, the interface is contained in the `Main.storyboard` file. Open it up and have a look around.
 
-<p align="center"> <img src="screenshot1.png" height="500px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot1.png" height="500px" align="center"> </p>
 
 You should see something that looks like this. There are three important parts worth knowing:
 
@@ -18,16 +18,16 @@ Now, remember we're making a calculator. When it comes down to it, there are two
 
 Interface Builder has our backs. Among the many tools at our disposal, we have the humble `UIButton` and `UILabel`. UIButtons are the standard button object in iOS, and UILabels are nothing more than simple text displays. Seems perfect for us. Scroll through the UI Palette until you find them (they're pretty close to the top).
 
-<p align="center"> <img src="screenshot3.png" height="250px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot3.png" height="250px" align="center"> </p>
 
 You can drag components from the UI Palette into your View Controller. Go ahead and drag a `Label` over and drop it on somewhere on the view. The process should look something like this:
 
-<p align="center"> <img src="screenshot4.png" height="350px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot4.png" height="350px" align="center"> </p>
 
 ### And he said, "Let there be Label"
 You can customize the label to your heart's content, too. Select the label and select the fourth tab in the Inspector. You should see a treasure-trove of customization options. Some are very clear..
 
-<p align="center"> <img src="screenshot2.png" height="282px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot2.png" height="282px" align="center"> </p>
 
 Play around some. Try to customize the text and make the font size larger. Both of these options are in the first five rows, so they should be pretty easy to manage. You might have to make the label larger, but you can do that just as easily by dragging the bottom-right corner of the label in the canvas.
 
@@ -37,15 +37,15 @@ Now's a good time to make sure we're on the right track. Lets run our app in the
 
 At the top of the Xcode window, you have your `Project Targets`. This is where you run your app, either on a physical device or the iOS Simulator.
 
-<p align="center"> <img src="screenshot5.png" height="37px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot5.png" height="37px" align="center"> </p>
 
 On the very right, you have the target device. Change it to whichever device is listed on the bottom bar of Interface Builder. Press play and the Simulator should pop open. It takes some time to boot up, but give it a moment.
 
-<p align="center"> <img src="screenshot6.png" height="500px" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot6.png" height="500px" align="center"> </p>
 
 If everything went according to plan, you should see your label. If you don't see it, try again. Delete the old label by clicking it and then pressing `backspace` on the keyboard. Then go through the same steps as before. If it helps you out, these are the attributes I used:
 
-<p align="center"> <img src="screenshot7.png" height="150" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P2/screenshot7.png" height="150" align="center"> </p>
 
 ### Recap
 Interface Builder is very visual. What you see if what you get, *to an extent*. You can add and modify components to the canvas and see them in the Simulator.
@@ -53,4 +53,4 @@ Interface Builder is very visual. What you see if what you get, *to an extent*. 
 ### Next Time
 We will learn how to use Interface Builder to make layouts with multiple buttons and how to customize the look of components on screen.
 
-#### [Part 3: Designing your layout with Interface Builder](../P3/part3.md)
+#### <a href="#top" onclick="setCalculatorTutorial(3)">Part 3: Designing your layout with Interface Builder</a>

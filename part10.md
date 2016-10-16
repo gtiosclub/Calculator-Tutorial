@@ -2,21 +2,21 @@
 
 We have our `UITableView` in place, but it still needs rows, or cells.
 
-### Prototype Cells 
+### Prototype Cells
 
 In Interface Builder, the cells we make are called *Prototype Cells*. They represent templates that will be used at runtime. If you have 10 rows, then UIKit creates 10 instances of the prototype cell and customizes them accordingly.
 
 We only need one Prototype Cell, because all of our content will be the same. To add one, click on the Table View and then take a look at the Attributes Inspector.
 
-<p align="center"> <img src="screenshot1.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot1.png" align="center"> </p>
 
 Increase the number of Prototype Cells from 0 to 1. Now you should have an empty white cell in the Table View.
 
-<p align="center"> <img src="screenshot2.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot2.png" align="center"> </p>
 
 Every Table View Cell **must have** a unique *Reuse Identifier*. The Reuse Identifier tells UIKit the name of the prototype cell so it knows which template to use. You set the Reuse Identifier by clicking on the Table View Cell and visiting the Attributes Inspector again. I set the identifier to `paperTapeCell` but you can use anything.
 
-<p align="center"> <img src="screenshot3.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot3.png" align="center"> </p>
 
 ### Designing the Paper Tape Cell
 
@@ -24,23 +24,23 @@ Now we have to set up the content of the Paper Tape Cell prototype. This is just
 
 Drag a `UILabel` into the Collection View cell, again making sure to align it with the guides.
 
-<p align="center"> <img src="screenshot4.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot4.png" align="center"> </p>
 
 Now, it's back to the Tie Fighter menu. This time, you want to leave `Constrain to margins` checked on, because it would be strange for a label to go all the way to the edge of the screen. After that, it's zeros all around.
 
-<p align="center"> <img src="screenshot5.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot5.png" align="center"> </p>
 
 You'll be left with the orange lines again, so *Update Frames* comes to the rescue again. Click on the label and then press the **⌘⌥=** (Command-Option-Equals) keys on your keyboard. (Get used to that one because you'll use it all the time.)
 
-<p align="center"> <img src="screenshot6.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot6.png" align="center"> </p>
 
-<p align="center"> <img src="screenshot7.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot7.png" align="center"> </p>
 
 Now we have the label on the far left instead of the right. It makes sense based on our constraints, but isn't really what we want. Thankfully, this is another fix. **Alignment** options under the label's Attributes Inspector solves that problem for us.
 
-<p align="center"> <img src="screenshot8.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot8.png" align="center"> </p>
 
-<p align="center"> <img src="screenshot9.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot9.png" align="center"> </p>
 
 Now we have a Prototype Cell with everything we need. We aren't done yet, though.
 
@@ -65,11 +65,11 @@ The prototype cell has a *Reuse Identifier*, but that isn't enough for Xcode to 
 
 Switch back to the `Main.storyboard` and select the `paperTapeCell` (our Prototype Cell). Make doubly sure that you selected the cell itself and **not** the UILabel inside it.
 
-<p align="center"> <img src="screenshot10.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot10.png" align="center"> </p>
 
 Then you'll need to use the Identity Inspector (the one with the ID card) for the Table Cell. This tab is where you can set the Custom Class of an object. Set the class to `PaperTapeCell`. Xcode should auto-fill after you type a few characters, meaning it recognizes the custom class as valid.
 
-<p align="center"> <img src="screenshot11.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P10/screenshot11.png" align="center"> </p>
 
 Now we can use this custom class to customize the prototype.
 
@@ -81,9 +81,9 @@ Connect the UILabel to the `PaperTapeCell` class (using control-drag), and name 
 
 ```swift
 class PaperTapeCell : UITableViewCell {
- 
+
     @IBOutlet weak var label: UIView!
-    
+
 }
 ```
 
@@ -91,13 +91,13 @@ Now we have access to the label itself, and we can modify values like `label.tex
 
 ```swift
 class PaperTapeCell : UITableViewCell {
- 
+
     @IBOutlet weak var label: UILabel!
-    
+
     func customize(_ customString: String) {
         label.text = customString
     }
-    
+
 }
 ```
 
@@ -109,4 +109,4 @@ You designed an implemented your custom prototype UITableViewCell using many of 
 ### Next Time
 We will implement code for the Table View, turning our `UIViewController` into a `UITableViewDataSource`.
 
-#### [Part 11: Implementing your TableViewDataSource](../P11/part11.md)
+#### <a href="#top" onclick="setCalculatorTutorial(11)">Part 11: Implementing your TableViewDataSource</a>

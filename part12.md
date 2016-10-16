@@ -22,7 +22,7 @@ That's all we need to have the Table View reload, but if we add a little more we
 ```swift
 func reloadTable() {
     tableView.reloadData()
-    
+
     let lastIndex = calculations.previousExpressions.count - 1
     let indexPath = NSIndexPath(forItem: lastIndex, inSection: 0)
     if lastIndex > 0 {
@@ -56,16 +56,16 @@ They should look like this now:
 ### Testing
 Run the app in the simulator again. If you did everything right, your table view should be working great.
 
-<p align="center"> <img src="screenshot1.gif" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P12/screenshot1.gif" align="center"> </p>
 
 ### Recap
 We added a new function `reloadTable()` to handle reloading and animating the Table View.
 
-You've implemented a fully-functional Calculator app. Congradulations!
-
-### Next Time
-That's it, we're all done! 
+You've implemented a fully-functional Calculator app. Congratulations!
 
 You learned about Interface Builder, Autolayout Constraints, Delegates, and Table Views. These skills are extremely important in the iOS world and are the building blocks you need to make any app.
 
-If you have feedback on the tutorial, you can email us at iosgatech@gmail.com.
+### Pushing to Github
+That's it, we're all done! Now all you have to do is push your code!
+
+#### <a href="#top" onclick="setCalculatorTutorial(13)">Part 13: Finishing Up (Github)</a>

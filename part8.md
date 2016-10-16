@@ -12,7 +12,7 @@ Double check the code you typed is correct. A missing question mark is enough to
 #### A button isn't working
 Revisit the storyboard file. Take a look at the Connections Inspector (arrow in a circle). Everything should have at least one connection. This is what they look like:
 
-<p align="center"> <img src="screenshot1.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P8/screenshot1.png" align="center"> </p>
 
 Button Actions look the same, but they should be connected to `Touch Up Inside`, which is a *Sent Event*
 
@@ -29,4 +29,4 @@ You tested your calculator, and fixed any problems that popped up. Now you have 
 ### Next Time
 You aren't done yet though! We'll shake up your world and fill in that mysterious empty space at the top of the screen with a UITableView.
 
-#### [Part 9: Preparing your UITableView](../P9/part9.md)
+#### <a href="#top" onclick="setCalculatorTutorial(9)">Part 9: Preparing your UITableView</a>

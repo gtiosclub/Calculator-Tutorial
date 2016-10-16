@@ -41,7 +41,7 @@ func setOperator(_ character: String, withFunction function: @escaping (Double, 
 
 #### (Double, Double) -> Double
 
-Just like any other argument, `(Double, Double) -> Double` is a type. This time, though, it represents a *function*. In Swift, functions are types just like everything else. It reads as **a function that takes two doubles and returns a double**. More on this in a sec, because it's gonna get real cool. 
+Just like any other argument, `(Double, Double) -> Double` is a type. This time, though, it represents a *function*. In Swift, functions are types just like everything else. It reads as **a function that takes two doubles and returns a double**. More on this in a sec, because it's gonna get real cool.
 
 Here's the actual method body (just throw it somewhere at the bottom of the ViewController.swift):
 
@@ -62,7 +62,7 @@ The one weird bit here is the `@escaping` annotation. This boils down to an esot
 
 Marking the closure `@escaping` allows it to *escape* the context of the function. We escape the closure when we call `DefaultOperator(forCharacter: character, withFunction: function)`, because we're passing the `function` to the `DefaultOperator`. Since we're violating the default nonescaping behavior, the code wouldn't compile without the `@escaping` annotation.
 
-#### Calling the function 
+#### Calling the function
 
 Now we can go back to looking at the @IBActions themselves. Because of how we implemented the `setOperator` function, this is gonna be really slick:
 
@@ -127,4 +127,4 @@ We connected the logic contained in the CalculationDelegate to the interface by 
 ### Next Time
 We will test the calculator and make sure everything is in working order.
 
-#### [Part 8: Testing and Debugging your Calculator](../P8/part8.md)
+#### <a href="#top" onclick="setCalculatorTutorial(8)">Part 8: Testing and Debugging your Calculator</a>

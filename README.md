@@ -1,13 +1,8 @@
-##### [Part 1: Creating your Xcode Project](P1/part1.md)
-##### [Part 2: Getting the hang of Interface Builder](P2/part2.md)
-##### [Part 3: Designing your layout with Interface Builder](P3/part3.md)
-##### [Part 4: Setting up your Constraints](P4/part4.md)
-##### [Part 5: Connecting Storyboard to Code](P5/part5.md)
-###### [Bonus: Explaining @IBOutlet "junk"](P5/bonus.md)
-##### [Part 6: Preparing your Calculation Delegate](P6/part6.md)
-##### [Part 7: Implementing your Buttons](P7/part7.md)
-##### [Part 8: Testing and Debugging your Calculator](P8/part8.md)
-##### [Part 9: Preparing your TableViewController](P9/part9.md)
-##### [Part 10: Implementing your custom TableViewCell](P10/part10.md)
-##### [Part 11: Implementing your TableViewDataSource](P11/part11.md)
-##### [Part 12: Reloading and Animating your Table View](P12/part12.md)
+# How to port this to Legacy GT iOS Website
+
+1. Move all of the contents in `assets/calculator/` to `app/assets/images/calculator/` in the rails-site
+2. Move all of the tutorials .md files (part*.md) to `app/assets/tutorials/calculator/`
+3. `rm -rf public` when in the root directory of the rails-site
+4. `rake assets:precompile` to compile the assets
+5. `rails s` to run the server on `localhost:3000`
+6. To push to heroku, git add, git commit, and then `git push heroku master` if you have permission.

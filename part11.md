@@ -2,7 +2,7 @@
 
 In Parts 9 and 10, you did the leg work on adding a UITableView to your Storyboard. If we try it in the simulator, though, it doesn't actually do anything yet. (You may or may not see the lines, depending on the scaled resolution of your simulator.)
 
-<p align="center"> <img src="screenshot1.png" width=300px align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P11/screenshot1.png" width=300px align="center"> </p>
 
 We need to add the code that controls the Table View itself. `UITableView` has two delegate-type classes: `UITableViewDelegate` and `UITableViewDataSource`. The *Delegate* controls aspects like row height and user interaction, while the *Data Source* actually provides the Table View with data. We only need to implement the **Data Source**.
 
@@ -14,7 +14,7 @@ We need to add the code that controls the Table View itself. `UITableView` has t
 class ViewController: UIViewController, UITableViewDataSource {
 ```
 
-Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAtIndexPath:)`. 
+Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAtIndexPath:)`.
 
 `numberOfRowsInSection` tells the data source how many rows the table should have, and `cellForRowAtIndexPath` creates a copy of the prototype cell that we made in Part 10.
 
@@ -64,7 +64,7 @@ let cell = tableView.dequeueReusableCellWithIdentifier("paperTapeCell") as! Pape
 
 This is the part that actually creates out `UITableViewCell`. There are three major things happening here:
 1. We dequeue a cell with the identifier that we set in Interface Builder. If you followed what I did, that identifier is `paperTapeCell`.
-2. The `dequeueReusableCellWithIdentifier` function returns a `UITableViewCell`. 
+2. The `dequeueReusableCellWithIdentifier` function returns a `UITableViewCell`.
 3. We know that this cell is a `PaperTapeCell`, because we set the custom class of our prototype cell. We use `as!` to force-cast the cell to the correct class. It's ok for us to do the forcibly (with an `!`), because we know it will never fail.
 
 ```swift
@@ -85,11 +85,11 @@ As of now, our `ViewController` is a valid `UITableViewDataSource`, but we still
 
 You'll want to **control-drag** from the Table View to the View Controller. It's probably easiest to do that in the View Hierarchy on the left.
 
-<p align="center"> <img src="screenshot2.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P11/screenshot2.png" align="center"> </p>
 
 Then select dataSource, and you should be all set.
 
-<p align="center"> <img src="screenshot3.png" align="center"> </p>
+<p align="center"> <img src="/assets/calculator/P11/screenshot3.png" align="center"> </p>
 
 ### Testing in the Simulator
 
@@ -107,4 +107,4 @@ We implemented `UITableViewDataSource` as a part of our `ViewController` and con
 ### Next Time
 We'll make the table view reload when it needs to, and add in an animation.
 
-#### [Part 12: Reloading and Animating your Table View](../P12/part12.md)
+#### <a href="#top" onclick="setCalculatorTutorial(12)">Part 12: Reloading and Animating your Table View</a>
