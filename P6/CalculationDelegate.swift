@@ -139,7 +139,7 @@ struct DefaultOperator : Operator {
 extension Double {
     
     var roundedString: String {
-        let rounded = self.rounded() / 100
+        let rounded = (self * 100).rounded() / 100
         let string = "\(rounded)"
         return string.hasSuffix(".0") ? "\(Int(self))" : string
     }
