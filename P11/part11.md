@@ -8,15 +8,15 @@ We need to add the code that controls the Table View itself. `UITableView` has t
 
 ### Turning our View Controller into a Data Source
 
-`UITableViewDataSource` is a protocol that can be conformed to by any class. Because of the way our project is set up so far, it makes perfect sence to make our `ViewController` class simply conform to the protocol instead of creating an entire new class.
+`UITableViewDataSource` is a protocol that can be conformed to by any class. Because of the way our project is set up so far, it makes perfect sense to make our `ViewController` class simply conform to the protocol instead of creating an entire new class.
 
 ```swift
 class ViewController: UIViewController, UITableViewDataSource {
 ```
 
-Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAtIndexPath:)`. 
+Now you'll get some errors if you try and build your project. And that's totally expected. `UITableViewDataSource` requires that we implement two specific functions before the class can be considered to conform to the protocol: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAt:)`. 
 
-`numberOfRowsInSection` tells the data source how many rows the table should have, and `cellForRowAtIndexPath` creates a copy of the prototype cell that we made in Part 10.
+`numberOfRowsInSection` tells the data source how many rows the table should have, and `cellForRowAt` creates a copy of the prototype cell that we made in Part 10.
 
 #### numberOfRowsInSection:
 
@@ -30,16 +30,16 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 }
 ```
 
-#### cellForRowAtIndexPath:
+#### cellForRowAt:
 
 This one is a bit more complicated. First I'll show you the implementation so you can suck it all in, and then I'll explain.
 
 ```swift
-func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let index = indexPath.item
     let (expression, result) = calculations.previousExpressions[index]
 
-    let cell = tableView.dequeueReusableCellWithIdentifier("paperTapeCell") as! PaperTapeCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "paperTapeCell") as! PaperTapeCell
     cell.customize(expression + " " + result)
     return cell
 }
@@ -50,7 +50,7 @@ func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSInde
 ```swift
 let index = indexPath.item
 ```
-In UIKit, an `NSIndexPath` is a representation of both a *Section* and an *Item* within that section. In our table view, we're only using one section, so `index.section` will always be zero. We want the number of the item within that section, so we use `index.item`.
+In UIKit, an `IndexPath` is a representation of both a *Section* and an *Item* within that section. In our table view, we're only using one section, so `indexPath.section` will always be zero. We want the number of the item within that section, so we use `indexPath.item`.
 
 ```swift
 let (expression, result) = calculations.previousExpressions[index]
@@ -59,19 +59,19 @@ let (expression, result) = calculations.previousExpressions[index]
 `calculations.previousExpression` is an array of the type `[(String, String)]`. The parenthesis are part of what's called a **Tuple**, allowing us to store multiple values in the same object. Each item of the array has the type `(String, String)`. We pull out a value from the array (`index`) and then save the two values to `expression` and `result`.
 
 ```swift
-let cell = tableView.dequeueReusableCellWithIdentifier("paperTapeCell") as! PaperTapeCell
+let cell = tableView.dequeueReusableCell(withIdentifier: "paperTapeCell") as! PaperTapeCell
 ```
 
 This is the part that actually creates out `UITableViewCell`. There are three major things happening here:
 1. We dequeue a cell with the identifier that we set in Interface Builder. If you followed what I did, that identifier is `paperTapeCell`.
-2. The `dequeueReusableCellWithIdentifier` function returns a `UITableViewCell`. 
+2. The `dequeueReusableCell` function returns a `UITableViewCell`. 
 3. We know that this cell is a `PaperTapeCell`, because we set the custom class of our prototype cell. We use `as!` to force-cast the cell to the correct class. It's ok for us to do the forcibly (with an `!`), because we know it will never fail.
 
 ```swift
 cell.customize(expression + " " + result)
 ```
 
-Remember when we wrote the `custmize` function inside of `PaperTapeCell` in Part 10? We did that so we could use it here. We call it here and let the cell itself handle the customization.
+Remember when we wrote the `customize` function inside of `PaperTapeCell` in Part 10? We did that so we could use it here. We call it here and let the cell itself handle the customization.
 
 ```swift
 return cell

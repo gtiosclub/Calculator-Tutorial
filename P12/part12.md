@@ -24,9 +24,9 @@ func reloadTable() {
     tableView.reloadData()
     
     let lastIndex = calculations.previousExpressions.count - 1
-    let indexPath = NSIndexPath(forItem: lastIndex, inSection: 0)
+    let indexPath = IndexPath(item: lastIndex, section: 0)
     if lastIndex > 0 {
-        tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Bottom, animated: true)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 }
 ```
